@@ -1,7 +1,8 @@
 // knockoutFixtures.js
 
+
 // Placeholder structure for Round of 16 (R16) matches
-export const getWinner = (match) => { // Must have the 'export' keyword
+export const getWinner = (match:any) => { // Must have the 'export' keyword
     if (match.score1 > match.score2) return match.team1;
     if (match.score2 > match.score1) return match.team2;
     // Handle PSO winner
