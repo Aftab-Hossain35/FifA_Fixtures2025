@@ -9,8 +9,8 @@ interface MatchProps {
   flag2: string;
   date?: string; // Optional for upcoming matches
   time?: string; // Optional for upcoming matches
-  score1?: string; // Optional for completed matches
-  score2?: string; // Optional for completed matches
+  score1: number | string;
+  score2: number | string; // Optional for completed matches
 }
 
 const MatchCard: React.FC<MatchProps> = ({ team1, team2, flag1, flag2, date, time, score1, score2 }) => {
@@ -24,7 +24,7 @@ const MatchCard: React.FC<MatchProps> = ({ team1, team2, flag1, flag2, date, tim
         )}
         <span className="font-semibold text-md">{team1} </span>
         </div>
-        <span className="text-gray-20 mr-64">{score1}</span> 
+        <span className="text-gray-20 lg:mr-64 sm:mr-64">{score1}</span> 
       </div>
 
       {/* Score Placeholder / Time */}
@@ -41,7 +41,7 @@ const MatchCard: React.FC<MatchProps> = ({ team1, team2, flag1, flag2, date, tim
         )}
         <span className="font-semibold text-md">{team2}</span>
         </div>
-        <span className="text-gray-20 mr-64">{score2}</span> 
+        <span className="text-gray-20 lg:mr-64 sm:mr-64">{score2}</span> 
       </div>
     </div>
   );

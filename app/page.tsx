@@ -6,7 +6,7 @@ import KnockoutBracket from '../components/KnockoutBracket';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-900 p-8 sm:p-12 md:p-16"> {/* Darker background */}
+    <main className="min-h-screen bg-gray-900 p-8 sm:p-12 md:p-16 "> {/* Darker background */}
       <h1 className="text-5xl font-extrabold text-center text-white mb-12 drop-shadow-lg">
         FIFA World Cup 2025
       </h1>

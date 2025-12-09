@@ -15,8 +15,8 @@ export const ALL_GROUPS_FIXTURES = [
         // No scores as these are likely upcoming fixtures
         date: "Dec 1, 23",
         time: "14:00 GMT",
-        score1: "1",
-        score2: "3",
+        score1: 1,
+        score2:3,
       },
       {
         team1: "Mexico",
@@ -50,8 +50,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/netherland.png",
         date: "Dec 2, 23",
         time: "14:00 GMT",
-        score1: "3",
-        score2: "0",
+        score1: 3,
+        score2: 0,
       },
       {
         team1: "Uruguay",
@@ -86,8 +86,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/1200px-Flag_of_Germany.svg.png",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "2",
-        score2: "3",
+        score1: 2,
+        score2: 3,
       },
       {
         team1: "Usa",
@@ -122,8 +122,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/colombia.png",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "",
-        score2: "",
+        score1: 0,
+        score2: 0,
       },
       {
         team1: "Iran",
@@ -158,8 +158,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/Flag_of_Australia_(converted).svg",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "",
-        score2: "",
+        score1: 2,
+        score2: 1,
       },
       {
         team1: "Newzealand",

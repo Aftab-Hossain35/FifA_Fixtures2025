@@ -11,8 +11,8 @@ interface GroupSectionProps {
     flag2: string;
     date?: string;
     time?: string;
-    score1?: string;
-    score2?: string;
+    score1: number | string;
+    score2: number | string;
   }[];
 }
 

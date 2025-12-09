@@ -25,7 +25,7 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
   const scoreClass = "text-green-500";
   
   return (
-    <div className="bg-gray-800 p-3 rounded-lg shadow-lg mb-4 border border-gray-700 hover:border-blue-500 transition duration-200">
+    <div className="bg-gray-800 p-3 rounded-lg shadow-lg mb-4 border border-gray-700 hover:border-blue-500 transition duration-200 w-auto">
       <div className="text-xs text-gray-500 mb-2">{round} - Match {id}</div>
       
       {/* Team 1 Row */}
