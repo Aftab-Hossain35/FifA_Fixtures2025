@@ -8,18 +8,25 @@ interface MatchProps {
   id: number;
   team1: string;
   team2: string;
-  score1: number;
-  score2: number;
+  score1: number | string;
+  score2: number | string;
   status: string;
-  pso?: string;
-  round: string;
   flag1: string;
   flag2: string;
+  pso?: string | number;
+  round: string;
 }
 
 const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, score2, status, pso, round, flag1, flag2 }) => {
-  const isTeam1Winner = score1 > score2 || (pso && pso.split('-')[0] > pso.split('-')[1]);
-  const isTeam2Winner = score2 > score1 || (pso && pso.split('-')[1] > pso.split('-')[0]);
+  const s1 = typeof score1 === 'string' ? parseInt(score1, 10) : score1;
+  const s2 = typeof score2 === 'string' ? parseInt(score2, 10) : score2;
+  const psoParts = typeof pso === 'string' ? pso.split('-').map(part => parseInt(part.trim(), 10)) : [];
+  const p1 = psoParts[0];
+  const p2 = psoParts[1];
+  const hasScores = Number.isFinite(s1) && Number.isFinite(s2);
+  const hasPSO = Number.isFinite(p1) && Number.isFinite(p2);
+  const isTeam1Winner = (hasScores && s1 > s2) || (hasPSO && p1 > p2);
+  const isTeam2Winner = (hasScores && s2 > s1) || (hasPSO && p2 > p1);
   const winnerClass = "font-bold text-yellow-400";
   const loserClass = "text-gray-400";
   const scoreClass = "text-green-500";
@@ -36,7 +43,7 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
         </div>
         <span className={scoreClass}>
           {score1}
-          {pso && isTeam1Winner && <span className="text-xs text-gray-400 ml-1">({pso.split('-')[0]})</span>}
+          {hasPSO && isTeam1Winner && <span className="text-xs text-gray-400 ml-1">({p1})</span>}
         </span>
       </div>
 
@@ -48,13 +55,13 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
         </div>
         <span className={scoreClass}>
           {score2}
-          {pso && isTeam2Winner && <span className="text-xs text-gray-400 ml-1">({pso.split('-')[1]})</span>}
+          {hasPSO && isTeam2Winner && <span className="text-xs text-gray-400 ml-1">({p2})</span>}
         </span>
       </div>
 
       {/* Status Footer */}
       <div className="text-right text-sm mt-2 text-red-500 font-semibold border-t border-gray-700 pt-1">
-        {status} {pso && `(PSO)`}
+        {status} {hasPSO && `(PSO)`}
       </div>
     </div>
   );
