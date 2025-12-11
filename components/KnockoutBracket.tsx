@@ -17,17 +17,10 @@ const RoundSection: React.FC<RoundProps> = ({ title, matches, roundName }) => (
     <div className="grid grid-cols-1 gap-6">
       {matches.map((match) => (
         <KnockoutMatchCard
-        team1={match.team1}
-        team2={match.team2}
-        id={match.id}
-        score1={Number(match.score1)}
-        score2={Number(match.score2)}
-        status={match.status}
-        flag1={match.flag1}
-        flag2={match.flag2}
-        pso={match.pso}
-        round={roundName}
-      />
+          key={match.id}
+          round={roundName}
+          {...match}
+        />
       ))}
     </div>
   </div>
@@ -38,7 +31,7 @@ const KnockoutBracket: React.FC = () => {
 
   return (
     <div className="min-h-screen text-white p-8">
-      <h1 className="text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 mb-12">
+      <h1 className="text-5xl font-extrabold text-center bg-clip-text text-transparent from-pink-500 to-purple-500 mb-12">
         Knockout Stage
       </h1>
 
