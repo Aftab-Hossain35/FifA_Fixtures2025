@@ -16,7 +16,7 @@ export const ALL_GROUPS_FIXTURES = [
         date: "Dec 1, 23",
         time: "14:00 GMT",
         score1: 1,
-        score2:3,
+        score2: 3,
       },
       {
         team1: "Mexico",
@@ -25,8 +25,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/Flag_of_Belgium_(1830).svg.png",
         date: "Dec 1, 23",
         time: "17:00 GMT",
-        score1: "",
-        score2: "",
+        score1: 1,
+        score2: 1,
       },
       {
         team1: "France",
@@ -126,7 +126,7 @@ export const ALL_GROUPS_FIXTURES = [
         score2: 0,
       },
       {
-        team1: "Iran",
+        team1: "South-Africa",
         team2: "Colombia",
         flag1: "/flags/iran.png",
         flag2: "/flags/colombia.png",
@@ -137,7 +137,7 @@ export const ALL_GROUPS_FIXTURES = [
       },
       {
         team1: "England",
-        team2: "Iran",
+        team2: "South-Africa",
         flag1: "/flags/eng.jpg",
         flag2: "/flags/iran.png",
         date: "Dec 3, 23",
@@ -189,17 +189,17 @@ export const ALL_GROUPS_FIXTURES = [
     matches: [
       {
         team1: "Denmark",
-        team2: "Canada",
+        team2: "Cameroon",
         flag1: "/flags/denmark-paper-flag-patriotic-background-national-138241023.jpg",
         flag2: "/flags/canada.png",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "",
-        score2: "",
+        score1: "0",
+        score2: "0",
       },
       {
         team1: "Turkey",
-        team2: "Canada",
+        team2: "Cameroon",
         flag1: "/flags/Turkey.png",
         flag2: "/flags/canada.png",
         date: "Dec 3, 23",
@@ -230,8 +230,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/Flag_of_Italy.svg.png",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "",
-        score2: "",
+        score1: 1,
+        score2: 1,
       },
       {
         team1: "Italy",
@@ -261,16 +261,16 @@ export const ALL_GROUPS_FIXTURES = [
     matches: [
       {
         team1: "Portugal",
-        team2: "Japan",
+        team2: "Ecuador",
         flag1: "/flags/flag-of-portugal-free-vector.jpg",
         flag2: "/flags/japan.webp",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "",
-        score2: "",
+        score1: "3",
+        score2: "1",
       },
       {
-        team1: "Japan",
+        team1: "Ecuador",
         team2: "Croatia",
         flag1: "/flags/japan.webp",
         flag2: "/flags/Flag-Croatia.jpg",
