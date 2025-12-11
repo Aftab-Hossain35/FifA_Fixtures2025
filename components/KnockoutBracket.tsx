@@ -17,10 +17,17 @@ const RoundSection: React.FC<RoundProps> = ({ title, matches, roundName }) => (
     <div className="grid grid-cols-1 gap-6">
       {matches.map((match) => (
         <KnockoutMatchCard
-          key={match.id}
-          round={roundName}
-          {...match}
-        />
+        team1={match.team1}
+        team2={match.team2}
+        id={match.id}
+        score1={Number(match.score1)}
+        score2={Number(match.score2)}
+        status={match.status}
+        flag1={match.flag1}
+        flag2={match.flag2}
+        pso={match.pso}
+        round={roundName}
+      />
       ))}
     </div>
   </div>
