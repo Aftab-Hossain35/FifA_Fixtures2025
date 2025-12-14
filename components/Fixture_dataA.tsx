@@ -60,8 +60,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/netherland.png",
         date: "Dec 6, 23",
         time: "17:00 GMT",
-        score1: "",
-        score2: "",
+        score1: "0",
+        score2: "3",
       },
       {
         team1: "Spain",
@@ -96,8 +96,8 @@ export const ALL_GROUPS_FIXTURES = [
         flag2: "/flags/1200px-Flag_of_Germany.svg.png",
         date: "Dec 3, 23",
         time: "14:00 GMT",
-        score1: "",
-        score2: "",
+        score1: "0",
+        score2: "0",
       },
       {
         team1: "Argentina",
@@ -114,42 +114,6 @@ export const ALL_GROUPS_FIXTURES = [
   },
    {
     groupName: "Group D",
-    matches: [
-      {
-        team1: "England",
-        team2: "Colombia",
-        flag1: "/flags/eng.jpg",
-        flag2: "/flags/colombia.png",
-        date: "Dec 3, 23",
-        time: "14:00 GMT",
-        score1: 0,
-        score2: 0,
-      },
-      {
-        team1: "South-Africa",
-        team2: "Colombia",
-        flag1: "/flags/Flag_of_South_Africa.svg.png",
-        flag2: "/flags/colombia.png",
-        date: "Dec 3, 23",
-        time: "14:00 GMT",
-        score1: "",
-        score2: "",
-      },
-      {
-        team1: "England",
-        team2: "South-Africa",
-        flag1: "/flags/eng.jpg",
-        flag2: "/flags/Flag_of_South_Africa.svg.png",
-        date: "Dec 3, 23",
-        time: "14:00 GMT",
-        score1: "",
-        score2: "",
-      },
-      // ... more matches
-    ],
-  },
-   {
-    groupName: "Group E",
     matches: [
       {
         team1: "South-Korea",
@@ -176,6 +140,42 @@ export const ALL_GROUPS_FIXTURES = [
         team2: "Newzealand",
         flag1: "/flags/2560px-Flag_of_South_Korea_(1945–1948).svg.png",
         flag2: "/flags/new_zealand.png",
+        date: "Dec 3, 23",
+        time: "14:00 GMT",
+        score1: "",
+        score2: "",
+      },
+      // ... more matches
+    ],
+  },
+   {
+     groupName: "Group E",
+     matches: [
+      {
+        team1: "England",
+        team2: "Colombia",
+        flag1: "/flags/eng.jpg",
+        flag2: "/flags/colombia.png",
+        date: "Dec 3, 23",
+        time: "14:00 GMT",
+        score1: 0,
+        score2: 0,
+      },
+      {
+        team1: "South-Africa",
+        team2: "Colombia",
+        flag1: "/flags/Flag_of_South_Africa.svg.png",
+        flag2: "/flags/colombia.png",
+        date: "Dec 3, 23",
+        time: "14:00 GMT",
+        score1: "",
+        score2: "",
+      },
+      {
+        team1: "England",
+        team2: "South-Africa",
+        flag1: "/flags/eng.jpg",
+        flag2: "/flags/Flag_of_South_Africa.svg.png",
         date: "Dec 3, 23",
         time: "14:00 GMT",
         score1: "",
