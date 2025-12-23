@@ -10,14 +10,14 @@ export const getWinner = (match: any) => {
 
 export const R16_MATCHES = [
   // Assumes Group A Winner (1A), Group B Runner-up (2B), etc.
-  { id: 25, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png",},
-  { id: 26, team1: "TBD", team2: "TBD", score1: "", score2: "", pso: "", status: "FT",flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
-  { id: 27, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
-  { id: 28, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
-  { id: 29, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
-  { id: 30, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
-  { id: 31, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
-  { id: 32, team1: "TBD", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
+  { id: 25, team1: "Belgium", team2: "Netherland", score1: "", score2: "", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/netherland.png",},
+  { id: 26, team1: "Germany", team2: "Newzealand", score1: "", score2: "", pso: "", status: "FT",flag1: "/flags/1200px-Flag_of_Germany.svg.png",flag2: "/flags/new_zealand.png", },
+  { id: 27, team1: "England", team2: "Denmark", score1: "", score2: "", status: "FT", flag1: "/flags/eng.jpg",flag2: "/flags/denmark-paper-flag-patriotic-background-national-138241023.jpg", },
+  { id: 28, team1: "Italy", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/Flag_of_Italy.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", },
+  { id: 29, team1: "France", team2: "Spain", score1: "", score2: "", status: "FT",flag1: "/flags/R.jpg",flag2: "/flags/Flag-Spain.jpg", },
+  { id: 30, team1: "Argentina", team2: "South Korea", score1: "", score2: "", status: "FT",flag1: "/flags/Flag-Argentina.webp",flag2: "/flags/2560px-Flag_of_South_Korea_(1945–1948).svg.png", },
+  { id: 31, team1: "South-africa", team2: "Cameroon", score1: "", score2: "", status: "FT",flag1: "/flags/Flag_of_South_Africa.svg.png",flag2: "/flags/Flag_of_Cameroon.svg.png", },
+  { id: 32, team1: "Brazil", team2: "TBD", score1: "", score2: "", status: "FT",flag1: "/flags/1200px-Flag_of_Brazil.svg.webp",flag2: "/flags/1200px-Icon_None.svg.png", },
 ];
 
 // Determine Winners for Quarter Finals (QF) based on R16 results

@@ -38,7 +38,7 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
       {/* Team 1 Row */}
       <div className="flex justify-between items-center text-white mb-1">
         <div className="flex items-center">
-          <Image src={flag1} alt={`${team1} flag`} width={20} height={20} className="mr-2" />
+          <Image src={flag1} alt={`${team1} flag`} width={5} height={10} className="w-8 h-5 object-cover mr-2 rounded-sm border text-amber-100 border-gray-600"/>
           <span className={isTeam1Winner ? winnerClass : loserClass}>{team1}</span>
         </div>
         <span className={scoreClass}>
@@ -50,7 +50,7 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
       {/* Team 2 Row */}
       <div className="flex justify-between items-center text-white">
         <div className="flex items-center">
-          <Image src={flag2} alt={`${team2} flag`} width={20} height={20} className="mr-2" />
+          <Image src={flag2} alt={`${team2} flag`} width={5} height={10} className="w-8 h-5 object-cover mr-2 rounded-sm border text-amber-100 border-gray-600" />
           <span className={isTeam2Winner ? winnerClass : loserClass}>{team2}</span>
         </div>
         <span className={scoreClass}>
