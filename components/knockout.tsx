@@ -24,8 +24,8 @@ export const R16_MATCHES = [
 // Quarter-finals (QF)
 export const QF_MATCHES = [
     { id: 33, team1: getWinner(R16_MATCHES[0]), team2: getWinner(R16_MATCHES[1]), score1: "", score2: "", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/1200px-Flag_of_Germany.svg.png",}, // W49 vs W50
-    { id: 34, team1: getWinner(R16_MATCHES[2]), team2: getWinner(R16_MATCHES[3]), score1: "", score2: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", }, // W51 vs W52
-    { id: 35, team1: getWinner(R16_MATCHES[4]), team2: getWinner(R16_MATCHES[5]), score1: "", score2: "", pso: "", status: "FT", flag1: "/flags/eng.jpg",flag2: "/flags/1200px-Icon_None.svg.png", }, // W53 vs W54
+    { id: 34, team1: getWinner(R16_MATCHES[2]), team2: getWinner(R16_MATCHES[3]), score1: "", score2: "", status: "FT", flag1: "/flags/eng.jpg",flag2: "/flags/1200px-Icon_None.svg.png", }, // W51 vs W52
+    { id: 35, team1: getWinner(R16_MATCHES[4]), team2: getWinner(R16_MATCHES[5]), score1: "", score2: "", pso: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", }, // W53 vs W54
     { id: 36, team1: getWinner(R16_MATCHES[6]), team2: getWinner(R16_MATCHES[7]), score1: "", score2: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", }, // W55 vs W56
 ];
 
