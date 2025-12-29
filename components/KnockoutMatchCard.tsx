@@ -43,7 +43,7 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
         </div>
         <span className={scoreClass}>
           {score1}
-          {hasPSO && <span className="text-xs text-gray-400 ml-1">({p1})</span>}
+          { hasPSO && <span className="text-xs text-gray-400 ml-1">({p1})</span>}
         </span>
       </div>
 
@@ -55,7 +55,7 @@ const KnockoutMatchCard: React.FC<MatchProps> = ({ id, team1, team2, score1, sco
         </div>
         <span className={scoreClass}>
           {score2}
-          {hasPSO && <span className="text-xs text-gray-400 ml-1">({p2})</span>}
+          { hasPSO && <span className="text-xs text-gray-400 ml-1">({p2})</span>}
         </span>
       </div>
 
