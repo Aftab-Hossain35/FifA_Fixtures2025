@@ -24,15 +24,15 @@ export const R16_MATCHES = [
 // Quarter-finals (QF)
 export const QF_MATCHES = [
     { id: 33, team1: getWinner(R16_MATCHES[0]), team2: getWinner(R16_MATCHES[1]), score1: "2", score2: "2",pso: "5-3", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/1200px-Flag_of_Germany.svg.png",}, // W49 vs W50
-    { id: 34, team1: getWinner(R16_MATCHES[2]), team2: "Italy", score1: "", score2: "", status: "FT", flag1: "/flags/eng.jpg",flag2: "/flags/Flag_of_Italy.svg.png", }, // W51 vs W52
-    { id: 35, team1: getWinner(R16_MATCHES[4]), team2: getWinner(R16_MATCHES[5]), score1: "", score2: "", pso: "", status: "FT", flag1: "/flags/Flag-Spain.jpg",flag2: "/flags/Flag-Argentina.webp", }, // W53 vs W54
-    { id: 36, team1: getWinner(R16_MATCHES[6]), team2: "Portugal", score1: "", score2: "", status: "FT", flag1: "/flags/Flag_of_Cameroon.svg.png",flag2: "/flags/flag-of-portugal-free-vector.jpg", }, // W55 vs W56
+    { id: 34, team1: getWinner(R16_MATCHES[2]), team2: "Italy", score1: "2", score2: "0", status: "FT", flag1: "/flags/eng.jpg",flag2: "/flags/Flag_of_Italy.svg.png", }, // W51 vs W52
+    { id: 35, team1: getWinner(R16_MATCHES[4]), team2: getWinner(R16_MATCHES[5]), score1: "2", score2: "1", pso: "", status: "FT", flag1: "/flags/Flag-Spain.jpg",flag2: "/flags/Flag-Argentina.webp", }, // W53 vs W54
+    { id: 36, team1: getWinner(R16_MATCHES[6]), team2: "Portugal", score1: "1", score2: "3", status: "FT", flag1: "/flags/Flag_of_Cameroon.svg.png",flag2: "/flags/flag-of-portugal-free-vector.jpg", }, // W55 vs W56
 ];
 
 // Semi-finals (SF)
 export const SF_MATCHES = [
-    { id: 37, team1: "Belgium", team2: getWinner(QF_MATCHES[1]), score1: "", score2: "", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/1200px-Icon_None.svg.png", }, // W57 vs W58
-    { id: 38, team1: getWinner(QF_MATCHES[2]), team2: getWinner(QF_MATCHES[3]), score1: "", score2: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", }, // W59 vs W60
+    { id: 37, team1: "Belgium", team2: getWinner(QF_MATCHES[1]), score1: "", score2: "", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/eng.jpg", }, // W57 vs W58
+    { id: 38, team1: getWinner(QF_MATCHES[2]), team2: getWinner(QF_MATCHES[3]), score1: "", score2: "", status: "FT", flag1: "/flags/Flag-Spain.jpg",flag2: "/flags/flag-of-portugal-free-vector.jpg", }, // W59 vs W60
 ];
 
 // Final (F)
