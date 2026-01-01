@@ -31,15 +31,15 @@ export const QF_MATCHES = [
 
 // Semi-finals (SF)
 export const SF_MATCHES = [
-    { id: 37, team1: "Belgium", team2: getWinner(QF_MATCHES[1]), score1: "", score2: "", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/eng.jpg", }, // W57 vs W58
-    { id: 38, team1: getWinner(QF_MATCHES[2]), team2: getWinner(QF_MATCHES[3]), score1: "", score2: "", status: "FT", flag1: "/flags/Flag-Spain.jpg",flag2: "/flags/flag-of-portugal-free-vector.jpg", }, // W59 vs W60
+    { id: 37, team1: "Belgium", team2: getWinner(QF_MATCHES[1]), score1: "2", score2: "1", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/eng.jpg", }, // W57 vs W58
+    { id: 38, team1: getWinner(QF_MATCHES[2]), team2: getWinner(QF_MATCHES[3]), score1: "5", score2: "1", status: "FT", flag1: "/flags/Flag-Spain.jpg",flag2: "/flags/flag-of-portugal-free-vector.jpg", }, // W59 vs W60
 ];
 
 // Final (F)
 export const FINAL_MATCH = [
-    { id: 39, team1: getWinner(SF_MATCHES[0]), team2: getWinner(SF_MATCHES[1]), score1: "", score2: "", status: "FT", flag1: "/flags/1200px-Icon_None.svg.png",flag2: "/flags/1200px-Icon_None.svg.png", }, // W61 vs W62
+    { id: 39, team1: getWinner(SF_MATCHES[0]), team2: getWinner(SF_MATCHES[1]), score1: "1", score2: "2", status: "FT", flag1: "/flags/Flag_of_Belgium_(1830).svg.png",flag2: "/flags/Flag-Spain.jpg", }, // W61 vs W62
 ];
-
+  
 // 3rd Place Playoff (Optional)
 export const THIRD_PLACE_MATCH = [
     // Logic to determine 3rd/4th place losers goes here
